@@ -1,5 +1,6 @@
 #David McNichols Trever Cramer
 
+# Merge Arrays helper for MergeSort
 def mergep1(a1,a2):
     #This will merge 2 arrays
 
@@ -17,7 +18,7 @@ def mergep1(a1,a2):
         a3 += a1
     return a3
 
-
+#MergeSort
 def mergep2(arr):
     # Excutes Mergesort
     if len(arr) == 0 or len(arr) == 1:
@@ -29,7 +30,7 @@ def mergep2(arr):
         return mergep1(a1,a2)
 
 
-
+#QuickSort
 def qsort(a1):
     low=[]
     mid=[]
@@ -50,7 +51,7 @@ def qsort(a1):
         return a1
 
 
-
+#Heapify helper for HeapSort
 def hsort(a1):
     #Makes the array a heap
     length = len(a1)-1
@@ -72,7 +73,7 @@ def hsort(a1):
 
 
 
-
+#Moving helper for HeapSort
 def mDown(a1,p1,p2):
     lg = 2 * p1+1
     while lg <= p2:
@@ -88,14 +89,14 @@ def mDown(a1,p1,p2):
 
 
 
-
+#Switch position helper for HeapSort
 def spos(AR, a1, a2):
     temp= AR[a1]
     AR[a1]= AR[a2]
     AR[a2]= temp
 
 
-
+#BubbleSort
 def bsort(a1):
     for num in range(len(a1)-1,0,-1):
         for i in range(num):
@@ -108,7 +109,7 @@ def bsort(a1):
     return a1
 
 
-
+#Insertion Sort
 def isort(a1):
     for i in range(1,len(a1)):
 
