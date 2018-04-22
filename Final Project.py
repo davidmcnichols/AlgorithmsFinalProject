@@ -3,12 +3,12 @@ import random
 
 
 # Create a list of arbitrary length n made up of random integers.
-def randList(n):
-    rList = []
+def genRandList(n):
+    randList = []
     for i in range(n):
         rand = random.randint(-9999999, 9999999)
-        rList.append(rand)
-    return rList
+        randList.append(rand)
+    return randList
 
 
 # Merge Arrays helper for MergeSort
