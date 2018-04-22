@@ -1,10 +1,21 @@
 #David McNichols Trever Cramer
+import random
+
+
+# Create a list of arbitrary length n made up of random integers.
+def randList(n):
+    rList = []
+    for i in range(n):
+        rand = random.randint(-9999999, 9999999)
+        rList.append(rand)
+    return rList
+
 
 # Merge Arrays helper for MergeSort
-def mergep1(a1,a2):
-    #This will merge 2 arrays
+# This will merge 2 arrays
 
-    a3=[]
+def mergep1(a1,a2):
+    a3 = []
     while len(a1) !=0 and len(a2) !=0:
         if a1[0]< a2[0]:
             a3.append(a1[0])
@@ -17,6 +28,7 @@ def mergep1(a1,a2):
     else:
         a3 += a1
     return a3
+
 
 #MergeSort
 def mergep2(arr):
@@ -122,5 +134,3 @@ def isort(a1):
 
         a1[pos]=cv
     return a1
-
-
