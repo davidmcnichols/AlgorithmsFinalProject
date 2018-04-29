@@ -148,3 +148,78 @@ def msTest (array, reps):
     print(sum(times)/len(times))
     return
 
+# QuickSort Test
+
+def qsTest (array, reps):
+    times = []
+    for i in range(reps):
+        startTime = time.time()
+        qsort(array)
+        endTime = time.time()
+        times.append(endTime-startTime)
+    print(sum(times)/len(times))
+    return
+
+# HeapSort Test
+
+def hsTest (array, reps):
+    times = []
+    for i in range(reps):
+        startTime = time.time()
+        hsort(array)
+        endTime = time.time()
+        times.append(endTime-startTime)
+    print(sum(times)/len(times))
+    return
+
+# BubbleSort Test
+
+def bsTest (array, reps):
+    times = []
+    for i in range(reps):
+        startTime = time.time()
+        bsort(array)
+        endTime = time.time()
+        times.append(endTime-startTime)
+    print(sum(times)/len(times))
+    return
+
+# InsertionSort Test
+
+def isTest (array, reps):
+    times = []
+    for i in range(reps):
+        startTime = time.time()
+        isort(array)
+        endTime = time.time()
+        times.append(endTime-startTime)
+    print(sum(times)/len(times))
+    return
+
+
+#Create Testing Arrays
+a10a = genRandList(10)
+a10b = genRandList(10)
+a10c = genRandList(10)
+
+a100a = genRandList(100)
+a100b = genRandList(100)
+a100c = genRandList(100)
+
+a500a = genRandList(500)
+a500b = genRandList(500)
+a500c = genRandList(500)
+
+a1000a = genRandList(1000)
+a1000b = genRandList(1000)
+a1000c = genRandList(1000)
+
+a5000a = genRandList(5000)
+a5000b = genRandList(5000)
+a5000c = genRandList(5000)
+
+a10000a = genRandList(10000)
+a10000b = genRandList(10000)
+a10000c = genRandList(10000)
+
+
