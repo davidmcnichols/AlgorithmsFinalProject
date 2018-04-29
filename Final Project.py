@@ -1,6 +1,6 @@
 #David McNichols Trever Cramer
 import random
-
+import time
 
 # Create a list of arbitrary length n made up of random integers.
 def genRandList(n):
@@ -134,3 +134,17 @@ def isort(a1):
 
         a1[pos]=cv
     return a1
+
+
+# MergeSort Test
+
+def msTest (array, reps):
+    times = []
+    for i in range(reps):
+        startTime = time.time()
+        mergep2(array)
+        endTime = time.time()
+        times.append(endTime-startTime)
+    print(sum(times)/len(times))
+    return
+
